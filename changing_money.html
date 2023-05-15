@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table,
+    td,
+    th {
+      border: 1px solid black;
+    }
+  </style>
+
+  <body>
+    <form action="">
+      <table>
+        <tr>
+          <th>Amount</th>
+          <th>From Currency</th>
+          <th>To Currency</th>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              id="element_user"
+              placeholder="nhập số tiền muốn chuyển"
+            />
+          </td>
+          <td>
+            <select name="From--Currency" id="From__Currency">
+              <option value="VN">VNĐ</option>
+              <option value="Mỹ">Dollar</option>
+            </select>
+          </td>
+          <td>
+            <select name="From--Currency" id="To__Currency">
+              <option value="Mỹ">Dollar</option>
+              <option value="VN">VNĐ</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <button id="submit_section" onclick="click_changing()">convert</button>
+    <div id="result"></div>
+    <script>
+      function click_changing() {
+        let click_fromCurrency =
+          document.getElementById('From__Currency').value;
+        let click_toCurrency = document.getElementById('To__Currency').value;
+        let value_user = document.getElementById('element_user').value;
+
+        if (value_user != null || value_user == ' ') {
+          document.getElementById('result').innerText = `hãy nhập lại giá trị`;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main>
+      <button id="play_game" onclick="click_play()">chơi</button>
+    </main>
+
+    <script>
+      function click_play() {
+        let value_min = parseInt(prompt('hãy nhập số dự đoán nhỏ nhất'));
+        let value_max = parseInt(prompt('hãy nhập số dự đoán lớn nhất'));
+        let random = Math.floor(
+          Math.random() * (value_max - value_min + 1) + value_min
+        );
+        for (let i = 1; i <= 3; i++) {
+          let guess = parseInt(prompt('hãy nhập số dự đoán'));
+          document.write(`vòng lặp ${i}`);
+          if (guess == random) {
+            alert('bạn đã thắng');
+            break;
+          } else {
+            alert('bạn đã thua');
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
