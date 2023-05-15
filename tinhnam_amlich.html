@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav>
+    <div>
+      <label for="enter_years">nhập năm cần tìm</label>
+      <input type="text " name="enter_years" id="value_years" /> <br />
+      <button id="click_caculate" onclick="caculate_years()">Tính năm</button>
+      <div class="show_result"></div>
+    </div>
+
+    <script>
+      function caculate_years() {
+        let value = document.getElementById('value_years').value;
+        let value_nunber = parseInt(value_years);
+        let value_nunber_can = value_nunber % 10;
+        let value_nunber_chi = value_nunber % 12;
+        switch (value_nunber_can) {
+          case 0:
+            value_nunber_can = 'canh';
+            break;
+          case 1:
+            value_nunber_can = 'tân';
+            break;
+          case 2:
+            value_nunber_can = 'nhâm';
+            break;
+          case 3:
+            value_nunber_can = 'quý';
+            break;
+          case 4:
+            value_nunber_can = 'giáp';
+            break;
+          case 5:
+            value_nunber_can = 'ất';
+            break;
+          case 6:
+            value_nunber_can = 'bính';
+            break;
+          case 7:
+            value_nunber_can = 'đinh';
+            break;
+          case 8:
+            value_nunber_can = 'mậu';
+            break;
+          case 9:
+            value_nunber_can = 'kỷ';
+            break;
+        }
+        switch (value_nunber_chi) {
+          case 0:
+            value_nunber_chi = 'thân';
+            break;
+          case 1:
+            value_nunber_chi = 'dậu';
+            break;
+          case 2:
+            value_nunber_chi = 'tuất';
+            break;
+          case 3:
+            value_nunber_chi = 'hợi';
+            break;
+          case 4:
+            value_nunber_chi = 'tý';
+            break;
+          case 5:
+            value_nunber_chi = 'sửu';
+            break;
+          case 6:
+            value_nunber_chi = 'dần';
+            break;
+          case 7:
+            value_nunber_chi = 'mẹo';
+            break;
+          case 8:
+            value_nunber_chi = 'thìn';
+            break;
+          case 9:
+            value_nunber_chi = 'tỵ';
+            break;
+          case 10:
+            value_nunber_chi = 'ngọ';
+            break;
+          case 11:
+            value_nunber_chi = 'mùi';
+            break;
+        }
+        document.getElementById(
+          'show_result'
+        ).innerHTML = `năm âm lịch ${value_nunber_can} ${value_nunber_chi}`;
+      }
+    </script>
+  </body>
+</html>

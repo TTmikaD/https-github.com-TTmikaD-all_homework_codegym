@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav>
+
+    <main>
+      <label for="enter_number">nhập thông tin tháng muốn tìm</label>
+      <input type="text" name="enter_number" id="value_input" /> <br />
+      <button id="click_caculate" onclick="caculate_day()">Tính số ngày</button>
+
+      <div id="show_result"></div>
+    </main>
+
+    <script>
+      function caculate_day() {
+        let value = document.getElementById('value_input').value;
+        let value_mathematics = parseInt(value);
+        if (value_mathematics % 4 == 0 && value_mathematics % 100 != 0) {
+          document.getElementById('show_result').innerHTML = `đây là năm nhuận`;
+          switch (value_mathematics) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+              document.getElementById(
+                'show_result'
+              ).innerHTML = `tháng ${value_mathematics} có 31 ngày`;
+              break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+              document.getElementById(
+                'show_result'
+              ).innerHTML = `tháng ${value_mathematics} có 30 ngày`;
+              break;
+            default:
+              document.getElementById(
+                'show_result'
+              ).innerHTML = `tháng ${value_mathematics} có 29 ngày`;
+          }
+        } else {
+          document.getElementById(
+            'show_result'
+          ).innerHTML = `đây không là năm nhuận`;
+          switch (value_mathematics) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+              document.getElementById(
+                'show_result'
+              ).innerHTML = `tháng ${value_mathematics} có 31 ngày`;
+              break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+              document.getElementById(
+                'show_result'
+              ).innerHTML = `tháng ${value_mathematics} có 30 ngày`;
+              break;
+            default:
+              document.getElementById(
+                'show_result'
+              ).innerHTML = `tháng ${value_mathematics} có 29 ngày`;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
