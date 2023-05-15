@@ -28,3 +28,11 @@
 //     value_user * (click_fromCurrency / click_toCurrency);
 //   document.getElementById('result').innerHTML = submit_section_value;
 // }
+
+// function re_change_currency() {
+//   let x = document.getElementById('From__Currency').value;
+//   switch (x) {
+//     case 'VN':
+//       document.getElementById('To__Currency').innerHTML = x;
+//   }
+// }
