@@ -33,6 +33,6 @@ function re_change_currency() {
   let x = document.getElementById('From__Currency').value;
   switch (x) {
     case 'VN':
-      document.getElementById('To__Currency').style.borderColor = 'red';
+      document.getElementById('To__Currency').value = 'Mỹ';
   }
 }
