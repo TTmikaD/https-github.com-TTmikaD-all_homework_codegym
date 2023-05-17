@@ -17,9 +17,9 @@
     </nav>
 
     <main>
-      <label for="enter_number">nhập thông tin tháng muốn tìm</label>
+      <label for="enter_number">nhập thông tin năm muốn tìm</label>
       <input type="text" name="enter_number" id="value_input" /> <br />
-      <button id="click_caculate" onclick="caculate_day()">Tính số ngày</button>
+      <button id="click_caculate" onclick="caculate_day()">Tính toán</button>
 
       <div id="show_result"></div>
     </main>
@@ -28,9 +28,17 @@
       function caculate_day() {
         let value = document.getElementById('value_input').value;
         let value_mathematics = parseInt(value);
-        if (value_mathematics % 4 == 0 && value_mathematics % 100 != 0) {
-          document.getElementById('show_result').innerHTML = `đây là năm nhuận`;
-          switch (value_mathematics) {
+
+        let value_month = +prompt('hãy nhập tiếp tháng muốn tìm');
+
+        if (
+          (value_mathematics % 4 == 0 && value_mathematics % 100 == 0) ||
+          value_mathematics % 400 == 0
+        ) {
+          prompt(
+            `${value_mathematics} là năm nhuận vui lòng nhập tiếp thông tin tháng muốn tra cứu`
+          );
+          switch (value_month) {
             case 1:
             case 3:
             case 5:
@@ -40,26 +48,29 @@
             case 12:
               document.getElementById(
                 'show_result'
-              ).innerHTML = `tháng ${value_mathematics} có 31 ngày`;
+              ).innerHTML = `tháng ${value_month} có 31 ngày`;
               break;
+
             case 4:
             case 6:
             case 9:
             case 11:
               document.getElementById(
                 'show_result'
-              ).innerHTML = `tháng ${value_mathematics} có 30 ngày`;
+              ).innerHTML = `tháng ${value_month} có 30 ngày`;
               break;
+
             default:
               document.getElementById(
                 'show_result'
-              ).innerHTML = `tháng ${value_mathematics} có 29 ngày`;
+              ).innerHTML = `tháng ${value_month} có 29 ngày`;
+              break;
           }
         } else {
-          document.getElementById(
-            'show_result'
-          ).innerHTML = `đây không là năm nhuận`;
-          switch (value_mathematics) {
+          prompt(
+            `${value_mathematics} là năm không nhuận vui lòng nhập tiếp thông tin tháng muốn tra cứu`
+          );
+          switch (value_month) {
             case 1:
             case 3:
             case 5:
@@ -69,20 +80,23 @@
             case 12:
               document.getElementById(
                 'show_result'
-              ).innerHTML = `tháng ${value_mathematics} có 31 ngày`;
+              ).innerHTML = `tháng ${value_month} có 31 ngày`;
               break;
+
             case 4:
             case 6:
             case 9:
             case 11:
               document.getElementById(
                 'show_result'
-              ).innerHTML = `tháng ${value_mathematics} có 30 ngày`;
+              ).innerHTML = `tháng ${value_month} có 30 ngày`;
               break;
+
             default:
               document.getElementById(
                 'show_result'
-              ).innerHTML = `tháng ${value_mathematics} có 29 ngày`;
+              ).innerHTML = `tháng ${value_month} có 28 ngày`;
+              break;
           }
         }
       }
