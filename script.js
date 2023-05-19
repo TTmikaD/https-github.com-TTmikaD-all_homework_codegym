@@ -147,3 +147,9 @@ for (let i = 0; i <= m.length; i++) {
 for (let index in m) {
   console.log(index);
 }
+
+
+let n = new Array ('a','b','c','d')
+for (let i = 0; i <= n.length; i++) {
+  console.log('phần tử thứ', i, '=', n[i])
+}
