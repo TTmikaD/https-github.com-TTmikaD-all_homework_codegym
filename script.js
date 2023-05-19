@@ -152,3 +152,9 @@ let n = new Array('a', 'b', 'c', 'd');
 for (let i = 0; i <= n.length; i++) {
   console.log('phần tử thứ', i, '=', n[i]);
 }
+
+let b = [1,2,3,4,5];
+
+b[1]='hello';
+
+console.log(b)
