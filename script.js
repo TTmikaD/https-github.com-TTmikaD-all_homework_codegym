@@ -153,8 +153,11 @@ for (let i = 0; i <= n.length; i++) {
   console.log('phần tử thứ', i, '=', n[i]);
 }
 
-let b = [1,2,3,4,5];
+let b = [1, 2, 3, 4, 5];
 
-b[1]='hello';
+b[1] = 'hello';
 
-console.log(b)
+console.log(b);
+
+let newb = b.push('thêm phần tử mới vào mảng');
+console.log(newb);
