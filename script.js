@@ -113,54 +113,75 @@
 //   }
 // }
 
-let x = [1, 2, 3, 4, 5];
+// let x = [1, 2, 3, 4, 5];
 
-let y = [1, 'b', 'c', 2, { name: 'khánh', age: '18' }];
-// x[1] = 'hố lô';
-// x.length = 'đừng hello';
+// let y = [1, 'b', 'c', 2, { name: 'khánh', age: '18' }];
+// // x[1] = 'hố lô';
+// // x.length = 'đừng hello';
 
-let z = new Array('a', 'b', 'c');
-z[1] = 'hello';
-z[2] = 'cái gì';
+// let z = new Array('a', 'b', 'c');
+// z[1] = 'hello';
+// z[2] = 'cái gì';
 
-z[10] = 'tuổi gì vậy bà già';
-z[z.length] = 'á dduf';
-z[z.length] = 'á dduf';
-console.log(x);
-console.log(x.length);
+// z[10] = 'tuổi gì vậy bà già';
+// z[z.length] = 'á dduf';
+// z[z.length] = 'á dduf';
+// console.log(x);
+// console.log(x.length);
 
-console.log(y);
-console.log(z);
-console.log(z[10]);
+// console.log(y);
+// console.log(z);
+// console.log(z[10]);
 
-let m = new Array('a', 'b', 'c', 'd', 'e');
+// let m = new Array('a', 'b', 'c', 'd', 'e');
 
-m[1] = 'hello';
+// m[1] = 'hello';
 
-m[m.length] = 'bà đi đâu đó';
-m[m.length] = 'có ăn cơm không';
+// m[m.length] = 'bà đi đâu đó';
+// m[m.length] = 'có ăn cơm không';
 
-for (let i = 0; i <= m.length; i++) {
-  console.log('phần tử thứ', i, '=', m[i]);
+// for (let i = 0; i <= m.length; i++) {
+//   console.log('phần tử thứ', i, '=', m[i]);
+// }
+
+// for (let index in m) {
+//   console.log(index);
+// }
+
+// let n = new Array('a', 'b', 'c', 'd');
+// for (let i = 0; i <= n.length; i++) {
+//   console.log('phần tử thứ', i, '=', n[i]);
+// }
+
+// let b = [1, 2, 3, 4, 5];
+
+// b[1] = 'hello';
+
+// console.log(b);
+
+// let newb = b.push('thêm phần tử mới vào mảng');
+// console.log(newb);
+
+// let h = new Array('a', 'b', 'c');
+
+let k = [1, 2, 3, 4,-1,-2,-3, 5, 6, 7, 8, 9];
+
+let max = k[0];
+let min = k[0];
+let index_max = 0;
+let index_min = 0;
+for (let i = 0; i < k.length; i++) {
+  if (max < k[i]) {
+    max = k[i];
+    index_max = i;
+  }
+  if (min > k[i]) {
+    min = k[i];
+    index_min = i;
+  }
 }
+console.log(max);
+console.log(index_max);
 
-for (let index in m) {
-  console.log(index);
-}
-
-let n = new Array('a', 'b', 'c', 'd');
-for (let i = 0; i <= n.length; i++) {
-  console.log('phần tử thứ', i, '=', n[i]);
-}
-
-let b = [1, 2, 3, 4, 5];
-
-b[1] = 'hello';
-
-console.log(b);
-
-let newb = b.push('thêm phần tử mới vào mảng');
-console.log(newb);
-
-let h = new Array ('a','b','c')
-
+console.log(min);
+console.log(index_min);
