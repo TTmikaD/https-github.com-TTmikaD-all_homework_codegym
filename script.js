@@ -161,3 +161,6 @@ console.log(b);
 
 let newb = b.push('thêm phần tử mới vào mảng');
 console.log(newb);
+
+let h = new Array ('a','b','c')
+
