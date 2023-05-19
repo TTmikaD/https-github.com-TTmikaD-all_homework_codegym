@@ -112,3 +112,38 @@
 //     }
 //   }
 // }
+
+let x = [1, 2, 3, 4, 5];
+
+let y = [1, 'b', 'c', 2, { name: 'khánh', age: '18' }];
+// x[1] = 'hố lô';
+// x.length = 'đừng hello';
+
+let z = new Array('a', 'b', 'c');
+z[1] = 'hello';
+z[2] = 'cái gì';
+
+z[10] = 'tuổi gì vậy bà già';
+z[z.length] = 'á dduf';
+z[z.length] = 'á dduf';
+console.log(x);
+console.log(x.length);
+
+console.log(y);
+console.log(z);
+console.log(z[10]);
+
+let m = new Array('a', 'b', 'c', 'd', 'e');
+
+m[1] = 'hello';
+
+m[m.length] = 'bà đi đâu đó';
+m[m.length] = 'có ăn cơm không';
+
+for (let i = 0; i <= m.length; i++) {
+  console.log('phần tử thứ', i, '=', m[i]);
+}
+
+for (let index in m) {
+  console.log(index);
+}
