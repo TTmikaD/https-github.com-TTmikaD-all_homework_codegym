@@ -164,24 +164,30 @@
 
 // let h = new Array('a', 'b', 'c');
 
-let k = [1, 2, 3, 4, -1, -2, -3, 5, 6, 7, 8, 9];
+// let k = [1, 2, 3, 4, -1, -2, -3, 5, 6, 7, 8, 9];
 
-let max = k[0];
-let min = k[0];
-let index_max = 0;
-let index_min = 0;
-for (let i = 0; i < k.length; i++) {
-  if (max < k[i]) {
-    max = k[i];
-    index_max = i;
-  }
-  if (min > k[i]) {
-    min = k[i];
-    index_min = i;
-  }
-}
-console.log(max);
-console.log(index_max);
+// let max = k[0];
+// let min = k[0];
+// let index_max = 0;
+// let index_min = 0;
+// for (let i = 0; i < k.length; i++) {
+//   if (max < k[i]) {
+//     max = k[i];
+//     index_max = i;
+//   }
+//   if (min > k[i]) {
+//     min = k[i];
+//     index_min = i;
+//   }
+// }
+// console.log(max);
+// console.log(index_max);
 
-console.log(min);
-console.log(index_min);
+// console.log(min);
+// console.log(index_min);
+// let x = prompt('hãy nhập mật khẩu')
+// do {
+//   alert('nhập lại mật khẩu')
+// } while(x == 'vừng ơi mở cửa ra') {
+//   alert('xin mời bạn vào')
+// }
