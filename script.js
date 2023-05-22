@@ -200,8 +200,8 @@
 // alert('bullshit! thôi mày vào đi');
 
 // let x = [[1, 2, 3, 4, 5, 6, 7][('a', 'b', 'c', 'd', 'e')]];
-let x = [1, 2, 3, 4, 5];
+// let x = [1, 2, 3, 4, 5];
 
-for (let i = 0; i < x.length; i++) {
-  console.log('phần tử thứ:', i, '=', x[i]);
-}
+// for (let i = 0; i < x.length; i++) {
+//   console.log('phần tử thứ:', i, '=', x[i]);
+// }
