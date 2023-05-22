@@ -12,3 +12,6 @@ Ngoài ra nên đặt 1 biến price; trong switch sẽ gán giá trị cho bi�
 1, lấy sai tên biến
 2, đặt class nhưng lại lấy id
 3, check lại label -->
+
+bài tập về mảng và vòng lặp
+bài tập để thi trên trường
