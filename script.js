@@ -191,3 +191,10 @@
 // } while(x == 'vừng ơi mở cửa ra') {
 //   alert('xin mời bạn vào')
 // }
+
+// let passWords = 'vừng ơi mở cửa ra, please!';
+// let inputUser = '';
+// do {
+//   inputUser = prompt('nhập mật khẩu');
+// } while (inputUser !== passWords);
+// alert('bullshit! thôi mày vào đi');
