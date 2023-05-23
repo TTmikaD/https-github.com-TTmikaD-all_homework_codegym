@@ -219,6 +219,8 @@
 // }
 // console.log(x);
 
+console.log(`ngày 23/5/2023`);
+
 let x = ['a', 'b', 'c'];
 
 x[1] = 'chào bạn';
@@ -232,3 +234,17 @@ console.log(x);
 for (let i = 0; i < x.length; ++i) {
   console.log(`phần tử thứ ${i} là ${x[i]}`);
 }
+
+for (const index in x) {
+  console.log(index);
+}
+
+for (const value of x) {
+  console.log(value);
+}
+
+x.forEach(y => console.log(y))
+
+
+let yy = [1,2,3,4,5,6]
+yy.shift('')
