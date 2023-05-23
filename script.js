@@ -218,3 +218,17 @@
 //   valueLast--;
 // }
 // console.log(x);
+
+let x = ['a', 'b', 'c'];
+
+x[1] = 'chào bạn';
+x[0] = x[1];
+x[0] = x[x.length - 1];
+
+x[x.length] = 'hello';
+x[x.length] = 'hello';
+console.log(x);
+
+for (let i = 0; i < x.length; ++i) {
+  console.log(`phần tử thứ ${i} là ${x[i]}`);
+}
