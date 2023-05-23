@@ -206,15 +206,15 @@
 //   console.log('phần tử thứ:', i, '=', x[i]);
 // }
 
-let x = [-1, 2, 3, 4, 5, 6, 7];
-let valueEmpty = 0;
-let valueLast = x.length - 1;
-while (valueEmpty < valueLast) {
-  let y = x[valueEmpty];
-  x[valueEmpty] = x[valueLast];
-  x[valueLast] = b;
+// let x = [-1, 2, 3, 4, 5, 6, 7];
+// let valueEmpty = 0;
+// let valueLast = x.length - 1;
+// while (valueEmpty < valueLast) {
+//   let y = x[valueEmpty];
+//   x[valueEmpty] = x[valueLast];
+//   x[valueLast] = b;
 
-  valueEmpty++;
-  valueLast--;
-}
-console.log(x);
+//   valueEmpty++;
+//   valueLast--;
+// }
+// console.log(x);
