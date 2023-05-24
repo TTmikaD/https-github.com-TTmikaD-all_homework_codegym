@@ -219,32 +219,52 @@
 // }
 // console.log(x);
 
-console.log(`ngày 23/5/2023`);
+// console.log(`ngày 23/5/2023`);
 
-let x = ['a', 'b', 'c'];
+// let x = ['a', 'b', 'c'];
 
-x[1] = 'chào bạn';
-x[0] = x[1];
-x[0] = x[x.length - 1];
+// x[1] = 'chào bạn';
+// x[0] = x[1];
+// x[0] = x[x.length - 1];
 
-x[x.length] = 'hello';
-x[x.length] = 'hello';
-console.log(x);
+// x[x.length] = 'hello';
+// x[x.length] = 'hello';
+// console.log(x);
 
-for (let i = 0; i < x.length; ++i) {
-  console.log(`phần tử thứ ${i} là ${x[i]}`);
+// for (let i = 0; i < x.length; ++i) {
+//   console.log(`phần tử thứ ${i} là ${x[i]}`);
+// }
+
+// for (const index in x) {
+//   console.log(index);
+// }
+
+// for (const value of x) {
+//   console.log(value);
+// }
+
+// x.forEach(y => console.log(y))
+
+// let yy = [1,2,3,4,5,6]
+// yy.shift('')
+
+// console.log(`24/5/2023`);
+
+// function sayIntroduce(name) {
+//   console.log('xin chào', name);
+// }
+
+// sayIntroduce('guys');
+
+let x = [
+  [1, 2, 3, 4, 5],
+  ['a', 'b', 'c', 'c'],
+  [true, false],
+];
+
+for (let i = 0; i < x.length; i++) {
+  // console.log(x);
+  for(let j = 0; j < x[i].length; j++){
+    console.log(x[i][j])
+  }
 }
-
-for (const index in x) {
-  console.log(index);
-}
-
-for (const value of x) {
-  console.log(value);
-}
-
-x.forEach(y => console.log(y))
-
-
-let yy = [1,2,3,4,5,6]
-yy.shift('')
