@@ -264,7 +264,10 @@ let x = [
 
 for (let i = 0; i < x.length; i++) {
   // console.log(x);
-  for(let j = 0; j < x[i].length; j++){
-    console.log(x[i][j])
+  for (let j = 0; j < x[i].length; j++) {
+    console.log(x[i][j]);
+    for (let l = 0; l < x[i][j].length; l++) {
+      console.log(x[l][i][j]);
+    }
   }
 }
