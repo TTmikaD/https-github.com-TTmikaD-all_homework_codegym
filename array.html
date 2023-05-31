@@ -11,31 +11,56 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
+  <style>
+    canvas {
+      width: 300px;
+      height: 200px;
+      border: 1px solid;
+    }
+  </style>
   <body>
     <nav>
       <a href="/" aria-current="page">Home</a>
     </nav>
+    <canvas id="canvas"></canvas>
+    <canvas id="CireCanvas"></canvas>
+    <canvas id="CireCanvasHalf"></canvas>
+    <canvas id="reCanvas"></canvas>
 
     <script>
-      // let passWords = 'vừng ơi mở cửa ra, please!';
-      // let inputUser;
-      // do {
-      //   inputUser = prompt('nhập mật khẩu');
-      //   break;
-      // } while (inputUser !== passWords);
-      // alert('bullshit! thôi mày vào đi');
-      let x = [-1, 2, 3, 4, 5, 6, 7];
-      let valueEmpty = 0;
-      let valueLast = x.length - 1;
-      while (valueEmpty < valueLast) {
-        let y = x[valueEmpty];
-        x[valueEmpty] = x[valueLast];
-        x[valueLast] = b;
+      let canvas = document.getElementById('canvas');
+      let ctx = canvas.getContext('2d');
+      ctx.moveTo(100, 50);
+      ctx.lineTo(200, 100);
+      ctx.lineTo(200, 200);
+      ctx.stroke();
 
-        valueEmpty++;
-        valueLast--;
-      }
-      console.log(x);
+      let CireCanvas = document.getElementById('CireCanvas');
+      let cireX = CireCanvas.getContext('2d');
+      cireX.beginPath();
+      cireX.arc(200, 150, 40, 0, 2 * Math.PI);
+      cireX.fillStyle = 'red';
+      cireX.lineWidth = 20;
+      cireX.fill();
+      cireX.stroke();
+
+      let CireCanvasHalf = document.getElementById('CireCanvasHalf');
+      let cireY = CireCanvasHalf.getContext('2d');
+      cireY.beginPath();
+      cireY.arc(95, 50, 40, 0, (2 * Math.PI) / 2);
+      cireY.fillStyle = '	rgb(	255,127,80)';
+      cireY.strokeStyle = 'red';
+      cireY.lineWidth = 20;
+      cireY.fill();
+      cireY.stroke();
+
+      let reCanvas = document.getElementById('reCanvas');
+      let reX = reCanvas.getContext('2d');
+      reX.beginPath();
+      reX.fillStyle = '	rgb(	255,127,80)';
+      reX.stroke();
+
+      
     </script>
   </body>
 </html>

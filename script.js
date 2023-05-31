@@ -271,3 +271,8 @@
 //     }
 //   }
 // }
+
+// let reCanvas = document.getElementById(' reCanvas ');
+// let reX = reCanvas.getContext('2d');
+// reX.fillStyle = '#0000FF';
+// rex.fillRect(0, 0, 255);
