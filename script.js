@@ -256,18 +256,18 @@
 
 // sayIntroduce('guys');
 
-let x = [
-  [1, 2, 3, 4, 5],
-  ['a', 'b', 'c', 'c'],
-  [true, false],
-];
+// let x = [
+//   [1, 2, 3, 4, 5],
+//   ['a', 'b', 'c', 'c'],
+//   [true, false],
+// ];
 
-for (let i = 0; i < x.length; i++) {
-  // console.log(x);
-  for (let j = 0; j < x[i].length; j++) {
-    console.log(x[i][j]);
-    for (let l = 0; l < x[i][j].length; l++) {
-      console.log(x[l][i][j]);
-    }
-  }
-}
+// for (let i = 0; i < x.length; i++) {
+//   // console.log(x);
+//   for (let j = 0; j < x[i].length; j++) {
+//     console.log(x[i][j]);
+//     for (let l = 0; l < x[i][j].length; l++) {
+//       console.log(x[l][i][j]);
+//     }
+//   }
+// }
