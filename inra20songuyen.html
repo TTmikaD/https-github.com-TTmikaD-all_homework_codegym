@@ -15,6 +15,24 @@
     <nav>
       <a href="/" aria-current="page">Home</a>
     </nav>
-    
+    <script>
+      let numbers = +prompt('nhập giá trị số cần tìm');
+      let count = 0;
+      let N = 2;
+      while (numbers > count) {
+        let checkNumbers = true;
+        for (let i = 2; i < N; i++) {
+          if (N % i == 0) {
+            checkNumbers = false;
+            break;
+          }
+        }
+        if (checkNumbers == true) {
+          console.log(N);
+          count++;
+        }
+        N++;
+      }
+    </script>
   </body>
 </html>

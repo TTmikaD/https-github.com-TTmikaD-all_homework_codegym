@@ -271,5 +271,3 @@
 //     }
 //   }
 // }
-
-let numbers = +prompt('nhập số nguyên tố cần tìm');
