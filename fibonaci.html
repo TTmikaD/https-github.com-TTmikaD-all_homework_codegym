@@ -19,6 +19,11 @@
   //  đây là tạo mảng fibonaci bất đầu với [1,1]
     for (let i = 2; i <= 10; i++) {
         fiBonaci[i] = fiBonaci[i - 1] + fiBonaci[i - 2];
+        // gióng vào giá trị mảng
+        // chẳng hạn f[2] = f[2-1] = 1 => giá trị trong mảng ở số 1 là 1
+        // chẳng hạn f[2] = f[2-2] = 0 => giá trị trong mảng ở số 0 là 1
+        // suy ra f[2 ] = 1 + 1 = 2
+        // thêm vào mảng fibonaci là [1,1,2]
         console.log(fiBonaci[i])
     }
   </script>
